@@ -2115,7 +2115,7 @@ export namespace Prisma {
   }
 
   export type UserCreateInput = {
-    id?: string
+    id: string
     createdAt?: Date | string
     updatedAt?: Date | string
     imageUrl?: string | null
@@ -2126,7 +2126,7 @@ export namespace Prisma {
   }
 
   export type UserUncheckedCreateInput = {
-    id?: string
+    id: string
     createdAt?: Date | string
     updatedAt?: Date | string
     imageUrl?: string | null
@@ -2159,7 +2159,7 @@ export namespace Prisma {
   }
 
   export type UserCreateManyInput = {
-    id?: string
+    id: string
     createdAt?: Date | string
     updatedAt?: Date | string
     imageUrl?: string | null
