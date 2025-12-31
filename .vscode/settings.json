@@ -1,0 +1,46 @@
+{
+  // Enable Cursor AI suggestions
+  "cursor.cpp.enableTab": true,
+  "cursor.general.enableTab": true,
+  "cursor.general.enableInlineCompletion": true,
+  
+  // TypeScript settings
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  
+  // Editor settings for better suggestions
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.inlineSuggest.enabled": true,
+  
+  // Language-specific settings
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  
+  // File associations
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  }
+}
+
+
+
+
+
