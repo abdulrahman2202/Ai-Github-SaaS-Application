@@ -21,8 +21,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@ai-sdk/google": "^0.0.24",
     "@clerk/nextjs": "^6.36.5",
-    "@google/generative-ai": "^0.24.1",
     "@hookform/resolvers": "^5.2.2",
     "@langchain/community": "^1.1.1",
     "@langchain/core": "^1.1.8",
@@ -58,6 +58,7 @@
     "@trpc/client": "^11.0.0",
     "@trpc/react-query": "^11.0.0",
     "@trpc/server": "^11.0.0",
+    "ai": "^3.2.0",
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -82,6 +83,10 @@
     "usehooks-ts": "^3.1.1",
     "vaul": "^1.1.2",
     "zod": "^3.25.76"
+  },
+  "overrides": {
+    "@ai-sdk/provider": "0.0.21",
+    "@ai-sdk/ui-utils": "0.0.21"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
