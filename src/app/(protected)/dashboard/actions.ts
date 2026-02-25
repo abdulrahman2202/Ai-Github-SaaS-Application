@@ -56,7 +56,7 @@ summary: ${doc.summary}
     const response = await model.generateContentStream(`
 You are an AI code assistant who answers questions about a GitHub codebase.
 
-Use ONLY the context below. If the answer is not in the context, say you don’t know.
+Use ONLY the context below. If the answer is not in the context, say you don't know.
 
 CONTEXT:
 ${context}
