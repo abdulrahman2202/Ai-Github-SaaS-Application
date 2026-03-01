@@ -104,7 +104,8 @@ const AskQuestionCard = () => {
         </CardHeader>
         <CardContent>
             <form onSubmit={onSubmit}>
-                <Textarea placeholder='Which file should I edit to change the home page?' value={question} onChange={e => setQuestion(e.target.value)} />
+                <Textarea placeholder='Which file should I edit to change the home page?' value={question} onChange={e => setQuestion(e.target.value)}
+                 className="min-h-[160px] text-base" />
                 <div className="h-4"></div>
                 <Button type='submit' disabled={loading}>
                     Ask TechTonic-AI
