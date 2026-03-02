@@ -95,6 +95,9 @@ getMeetings: protectedProcedure.input(z.object({projectId: z.string()})).query(a
         where:{
             projectId: input.projectId,
         },
+        include:{
+            issues:true
+        }
     })
 })
 })
