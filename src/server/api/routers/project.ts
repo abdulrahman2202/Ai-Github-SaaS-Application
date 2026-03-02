@@ -99,5 +99,18 @@ getMeetings: protectedProcedure.input(z.object({projectId: z.string()})).query(a
             issues:true
         }
     })
+}),
+
+archiveProject: protectedProcedure.input(z.object({
+    projectId: z.string()
+})).mutation(async({ctx,input})=>{
+    return await ctx.db.project.update({
+        where:{
+            id: input.projectId
+        },
+        data:{
+            deletedAt: new Date()
+        }
+    })
 })
 })
