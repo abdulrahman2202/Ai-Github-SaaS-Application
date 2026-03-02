@@ -10,7 +10,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAI-rT8ZHozpFCgDOpNiDnycg_0FaJTtD8",
   authDomain: "tech-tonic-workplace.firebaseapp.com",
   projectId: "tech-tonic-workplace",
-  storageBucket: "tech-tonic-workplace.firebasestorage.app",
+  storageBucket:"tech-tonic-workplace.firebasestorage.app",
   messagingSenderId: "386342982287",
   appId: "1:386342982287:web:7c3ea38cc4edd50e3696fa"
 };
@@ -45,7 +45,7 @@ export async function uploadFile(file:File, setProgress?: (progress: number) => 
             },
             () =>{
                 getDownloadURL(uploadTask.snapshot.ref).then(downloadURL =>{
-                    resolve(downloadURL)
+                    resolve(downloadURL as string)
                 })
             }
             )
