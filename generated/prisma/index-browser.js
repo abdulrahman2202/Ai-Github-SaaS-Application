@@ -179,6 +179,14 @@ exports.Prisma.IssueScalarFieldEnum = {
   meetingId: 'meetingId'
 };
 
+exports.Prisma.StripeTransactionScalarFieldEnum = {
+  id: 'id',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
+  userId: 'userId',
+  credits: 'credits'
+};
+
 exports.Prisma.QuestionScalarFieldEnum = {
   id: 'id',
   createdAt: 'createdAt',
@@ -240,6 +248,7 @@ exports.Prisma.ModelName = {
   SourceCodeEmbedding: 'SourceCodeEmbedding',
   Meeting: 'Meeting',
   Issue: 'Issue',
+  StripeTransaction: 'StripeTransaction',
   Question: 'Question',
   Commit: 'Commit'
 };

@@ -26,8 +26,9 @@ model User {
 
   credits Int @default(150)
 
-  userToProjects UserToProject[]
-  questionAsked  Question[]
+  userToProjects     UserToProject[]
+  questionAsked      Question[]
+  stripeTransactions StripeTransaction[]
 }
 
 model Project {
@@ -103,6 +104,16 @@ model Issue {
 
   meetingId String
   meeting   Meeting @relation(fields: [meetingId], references: [id])
+}
+
+model StripeTransaction {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId  String
+  user    User   @relation(fields: [userId], references: [id])
+  credits Int
 }
 
 enum MeetingStatus {
