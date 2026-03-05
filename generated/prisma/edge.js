@@ -235,7 +235,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Programming\\projects\\Ai Github\\generated\\prisma",
+      "value": "/vercel/sandbox/primary/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -244,19 +244,18 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "windows",
+        "value": "rhel-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [
       "postgresqlExtensions"
     ],
-    "sourceFilePath": "C:\\Programming\\projects\\Ai Github\\prisma\\schema.prisma",
+    "sourceFilePath": "/vercel/sandbox/primary/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.19.0",
